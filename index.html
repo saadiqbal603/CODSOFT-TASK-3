@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.css">
+
+
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="display" placeholder="00000" autofocus>
+        <div class="buttons">
+            <div class="number" onclick="appendtoDisplay('7')">7</div>
+
+            <div class="number" onclick="appendtoDisplay('8')">8</div>
+            <div class="number" onclick="appendtoDisplay('9')">9</div>
+            <div class="operator" onclick="appendtoDisplay('+')">+</div>
+            <div class="number" onclick="appendtoDisplay('4')">4</div>
+            <div class="number" onclick="appendtoDisplay('5')">5</div>
+            <div class="number" onclick="appendtoDisplay('6')">6</div>
+            <div class="operator" onclick="appendtoDisplay('-')">-</div>
+            <div class="number" onclick="appendtoDisplay('1')">1</div>
+            <div class="number" onclick="appendtoDisplay('2')">2</div>
+            <div class="number" onclick="appendtoDisplay('3')">3</div>
+            <div class="operator" onclick="appendtoDisplay('*')">*</div>
+            <div class="clear" onclick="clearDisplay()">C</div>
+            <div class="number" onclick="appendtoDisplay('0')">0</div>
+            <div class="cancel number" onclick="canceldigit()"><i class="fa-solid fa-xmark"></i></div>
+            <div class="calculate" onclick="calculateResult()">=</div>
+            <div class="operator" onclick="appendtoDisplay('/')">/</div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
